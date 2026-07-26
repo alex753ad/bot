@@ -1,0 +1,912 @@
+[
+  {
+    "symbol": "AKEUSDT",
+    "level": 0.0026826,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "AKEUSDT",
+    "level": 0.0027122,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "AKEUSDT",
+    "level": 0.002762,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "AKEUSDT",
+    "level": 0.0030052,
+    "level_side": "support",
+    "active": true,
+    "strength": 5,
+    "type": "wick_level",
+    "p_bounce": 0.441,
+    "expected_depth": 0.7
+  },
+  {
+    "symbol": "BANKUSDT",
+    "level": 0.31573,
+    "level_side": "support",
+    "active": false,
+    "strength": 3,
+    "type": "mid_impulse_pause",
+    "p_bounce": 0.918,
+    "expected_depth": 1.21
+  },
+  {
+    "symbol": "BANKUSDT",
+    "level": 0.34016,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "BANKUSDT",
+    "level": 0.35087,
+    "level_side": "support",
+    "active": true,
+    "strength": 3,
+    "type": "body_level",
+    "p_bounce": 0.923,
+    "expected_depth": 0.57
+  },
+  {
+    "symbol": "ONUSDT",
+    "level": 0.12,
+    "level_side": "resistance",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.887,
+    "expected_depth": 1.15
+  },
+  {
+    "symbol": "NIGHTUSDT",
+    "level": 0.01949,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "NIGHTUSDT",
+    "level": 0.0202,
+    "level_side": "support",
+    "active": false,
+    "strength": 2,
+    "type": "mid_impulse_pause",
+    "p_bounce": 0.918,
+    "expected_depth": 1.16
+  },
+  {
+    "symbol": "NIGHTUSDT",
+    "level": 0.021185,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.927,
+    "expected_depth": 0.36
+  },
+  {
+    "symbol": "DODOXUSDT",
+    "level": 0.016259,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "consolidation_base",
+    "p_bounce": 0.908,
+    "expected_depth": 1.04
+  },
+  {
+    "symbol": "DODOXUSDT",
+    "level": 0.016879,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "DODOXUSDT",
+    "level": 0.018072,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "DODOXUSDT",
+    "level": 0.018231,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "DODOXUSDT",
+    "level": 0.018696,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "consolidation_base",
+    "p_bounce": 0.927,
+    "expected_depth": 0.44
+  },
+  {
+    "symbol": "DODOXUSDT",
+    "level": 0.018921,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "REUSDT",
+    "level": 0.4778,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.9,
+    "expected_depth": 0.9
+  },
+  {
+    "symbol": "REUSDT",
+    "level": 0.4852,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.9,
+    "expected_depth": 0.9
+  },
+  {
+    "symbol": "REUSDT",
+    "level": 0.5498,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.9,
+    "expected_depth": 0.9
+  },
+  {
+    "symbol": "REUSDT",
+    "level": 0.5823,
+    "level_side": "support",
+    "active": false,
+    "strength": 4,
+    "type": "pump_base",
+    "p_bounce": 0.902,
+    "expected_depth": 0.68
+  },
+  {
+    "symbol": "EPICUSDT",
+    "level": 0.5154,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "EPICUSDT",
+    "level": 0.5409,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "EPICUSDT",
+    "level": 0.5493,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "EPICUSDT",
+    "level": 0.5746,
+    "level_side": "support",
+    "active": false,
+    "strength": 3,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.27
+  },
+  {
+    "symbol": "EPICUSDT",
+    "level": 0.57795,
+    "level_side": "support",
+    "active": false,
+    "strength": 3,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 0.75
+  },
+  {
+    "symbol": "TLMUSDT",
+    "level": 0.001655,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "TLMUSDT",
+    "level": 0.001672,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "TLMUSDT",
+    "level": 0.00169333,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "body_level",
+    "p_bounce": 0.923,
+    "expected_depth": 1.08
+  },
+  {
+    "symbol": "TLMUSDT",
+    "level": 0.00172189,
+    "level_side": "support",
+    "active": false,
+    "strength": 4,
+    "type": "body_level",
+    "p_bounce": 0.921,
+    "expected_depth": 0.87
+  },
+  {
+    "symbol": "TLMUSDT",
+    "level": 0.001733,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "SNXXUSDT",
+    "level": 16.06,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "SNXXUSDT",
+    "level": 17.01,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "SNXXUSDT",
+    "level": 17.26,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "SNXXUSDT",
+    "level": 17.73,
+    "level_side": "support",
+    "active": false,
+    "strength": 2,
+    "type": "body_level",
+    "p_bounce": 0.923,
+    "expected_depth": 1.26
+  },
+  {
+    "symbol": "SNXXUSDT",
+    "level": 18.27,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.927,
+    "expected_depth": 0.78
+  },
+  {
+    "symbol": "SNXXUSDT",
+    "level": 18.3741,
+    "level_side": "support",
+    "active": false,
+    "strength": 2,
+    "type": "body_level",
+    "p_bounce": 0.927,
+    "expected_depth": 1.26
+  },
+  {
+    "symbol": "MIRAUSDT",
+    "level": 0.04147,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "MIRAUSDT",
+    "level": 0.0419,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "breakout_level",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "MIRAUSDT",
+    "level": 0.042295,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "MIRAUSDT",
+    "level": 0.04342,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "MIRAUSDT",
+    "level": 0.04424,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "MIRAUSDT",
+    "level": 0.044507,
+    "level_side": "support",
+    "active": false,
+    "strength": 4,
+    "type": "body_level",
+    "p_bounce": 0.923,
+    "expected_depth": 1.2
+  },
+  {
+    "symbol": "MIRAUSDT",
+    "level": 0.04525,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.927,
+    "expected_depth": 0.36
+  },
+  {
+    "symbol": "RIFUSDT",
+    "level": 0.077552,
+    "level_side": "support",
+    "active": false,
+    "strength": 2,
+    "type": "mid_impulse_pause",
+    "p_bounce": 0.918,
+    "expected_depth": 1.03
+  },
+  {
+    "symbol": "RIFUSDT",
+    "level": 0.0783,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.925,
+    "expected_depth": 0.97
+  },
+  {
+    "symbol": "RIFUSDT",
+    "level": 0.07891,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.925,
+    "expected_depth": 0.97
+  },
+  {
+    "symbol": "RIFUSDT",
+    "level": 0.08216,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.925,
+    "expected_depth": 0.97
+  },
+  {
+    "symbol": "RIFUSDT",
+    "level": 0.0833,
+    "level_side": "support",
+    "active": true,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.902,
+    "expected_depth": 0.99
+  },
+  {
+    "symbol": "LAUSDT",
+    "level": 0.065885,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.9,
+    "expected_depth": 0.9
+  },
+  {
+    "symbol": "LAUSDT",
+    "level": 0.06625,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.9,
+    "expected_depth": 0.9
+  },
+  {
+    "symbol": "LAUSDT",
+    "level": 0.06672,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.891,
+    "expected_depth": 0.64
+  },
+  {
+    "symbol": "LAUSDT",
+    "level": 0.06806,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.9,
+    "expected_depth": 0.9
+  },
+  {
+    "symbol": "PROMUSDT",
+    "level": 1.585,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.9,
+    "expected_depth": 0.9
+  },
+  {
+    "symbol": "PROMUSDT",
+    "level": 1.705,
+    "level_side": "support",
+    "active": false,
+    "strength": 3,
+    "type": "mid_impulse_pause",
+    "p_bounce": 0.908,
+    "expected_depth": 0.94
+  },
+  {
+    "symbol": "PROMUSDT",
+    "level": 1.814,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.9,
+    "expected_depth": 0.9
+  },
+  {
+    "symbol": "PROMUSDT",
+    "level": 1.833,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.9,
+    "expected_depth": 0.9
+  },
+  {
+    "symbol": "PROMUSDT",
+    "level": 1.916,
+    "level_side": "support",
+    "active": false,
+    "strength": 4,
+    "type": "pump_base",
+    "p_bounce": 0.893,
+    "expected_depth": 0.63
+  },
+  {
+    "symbol": "PROMUSDT",
+    "level": 1.935,
+    "level_side": "support",
+    "active": false,
+    "strength": 1,
+    "type": "body_level",
+    "p_bounce": 0.908,
+    "expected_depth": 1.1
+  },
+  {
+    "symbol": "SOXSUSDT",
+    "level": 43.49,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.925,
+    "expected_depth": 0.97
+  },
+  {
+    "symbol": "SOXSUSDT",
+    "level": 45.26,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.925,
+    "expected_depth": 0.97
+  },
+  {
+    "symbol": "SOXSUSDT",
+    "level": 46.13,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.925,
+    "expected_depth": 0.97
+  },
+  {
+    "symbol": "SOXSUSDT",
+    "level": 47.59,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.925,
+    "expected_depth": 0.97
+  },
+  {
+    "symbol": "SOXSUSDT",
+    "level": 48.7067,
+    "level_side": "support",
+    "active": false,
+    "strength": 3,
+    "type": "body_level",
+    "p_bounce": 0.923,
+    "expected_depth": 1.09
+  },
+  {
+    "symbol": "SOXSUSDT",
+    "level": 48.98,
+    "level_side": "support",
+    "active": false,
+    "strength": 4,
+    "type": "consolidation_base",
+    "p_bounce": 0.918,
+    "expected_depth": 0.6
+  },
+  {
+    "symbol": "SOXSUSDT",
+    "level": 49.8172,
+    "level_side": "support",
+    "active": false,
+    "strength": 2,
+    "type": "body_level",
+    "p_bounce": 0.927,
+    "expected_depth": 1.13
+  },
+  {
+    "symbol": "SOXSUSDT",
+    "level": 50.1306,
+    "level_side": "support",
+    "active": false,
+    "strength": 2,
+    "type": "body_level",
+    "p_bounce": 0.927,
+    "expected_depth": 1.13
+  },
+  {
+    "symbol": "SOXSUSDT",
+    "level": 50.4157,
+    "level_side": "support",
+    "active": false,
+    "strength": 2,
+    "type": "body_level",
+    "p_bounce": 0.927,
+    "expected_depth": 1.13
+  },
+  {
+    "symbol": "SOXSUSDT",
+    "level": 50.71,
+    "level_side": "support",
+    "active": false,
+    "strength": 2,
+    "type": "body_level",
+    "p_bounce": 0.927,
+    "expected_depth": 1.13
+  },
+  {
+    "symbol": "VELVETUSDT",
+    "level": 0.4295,
+    "level_side": "support",
+    "active": false,
+    "strength": 4,
+    "type": "body_level",
+    "p_bounce": 0.923,
+    "expected_depth": 1.2
+  },
+  {
+    "symbol": "VELVETUSDT",
+    "level": 0.4308,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.921,
+    "expected_depth": 0.95
+  },
+  {
+    "symbol": "VELVETUSDT",
+    "level": 0.43219,
+    "level_side": "support",
+    "active": false,
+    "strength": 2,
+    "type": "body_level",
+    "p_bounce": 0.923,
+    "expected_depth": 1.26
+  },
+  {
+    "symbol": "VELVETUSDT",
+    "level": 0.43354,
+    "level_side": "support",
+    "active": false,
+    "strength": 2,
+    "type": "body_level",
+    "p_bounce": 0.927,
+    "expected_depth": 1.26
+  },
+  {
+    "symbol": "VELVETUSDT",
+    "level": 0.4406,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "B2USDT",
+    "level": 0.42063,
+    "level_side": "support",
+    "active": false,
+    "strength": 4,
+    "type": "body_level",
+    "p_bounce": 0.923,
+    "expected_depth": 1.2
+  },
+  {
+    "symbol": "B2USDT",
+    "level": 0.4221,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "B2USDT",
+    "level": 0.4241,
+    "level_side": "support",
+    "active": false,
+    "strength": 3,
+    "type": "consolidation_base",
+    "p_bounce": 0.912,
+    "expected_depth": 1.23
+  },
+  {
+    "symbol": "B2USDT",
+    "level": 0.4308,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.927,
+    "expected_depth": 0.7
+  },
+  {
+    "symbol": "EULUSDT",
+    "level": 2.3644,
+    "level_side": "support",
+    "active": false,
+    "strength": 3,
+    "type": "body_level",
+    "p_bounce": 0.923,
+    "expected_depth": 1.32
+  },
+  {
+    "symbol": "EULUSDT",
+    "level": 2.3826,
+    "level_side": "support",
+    "active": true,
+    "strength": 3,
+    "type": "body_level",
+    "p_bounce": 0.923,
+    "expected_depth": 0.75
+  },
+  {
+    "symbol": "ZAMAUSDT",
+    "level": 0.05025,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "ZAMAUSDT",
+    "level": 0.050815,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "consolidation_base",
+    "p_bounce": 0.927,
+    "expected_depth": 0.48
+  },
+  {
+    "symbol": "ZAMAUSDT",
+    "level": 0.052501,
+    "level_side": "support",
+    "active": false,
+    "strength": 2,
+    "type": "body_level",
+    "p_bounce": 0.923,
+    "expected_depth": 1.26
+  },
+  {
+    "symbol": "ZAMAUSDT",
+    "level": 0.05295,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "ZAMAUSDT",
+    "level": 0.05341,
+    "level_side": "support",
+    "active": false,
+    "strength": 2,
+    "type": "consolidation_base",
+    "p_bounce": 0.908,
+    "expected_depth": 1.19
+  },
+  {
+    "symbol": "ZAMAUSDT",
+    "level": 0.05403,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "1000SHIBUSDT",
+    "level": 0.00417,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "1000SHIBUSDT",
+    "level": 0.0042055,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "consolidation_base",
+    "p_bounce": 0.908,
+    "expected_depth": 1.04
+  },
+  {
+    "symbol": "1000SHIBUSDT",
+    "level": 0.004231,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.07
+  },
+  {
+    "symbol": "1000SHIBUSDT",
+    "level": 0.00435275,
+    "level_side": "support",
+    "active": false,
+    "strength": 4,
+    "type": "mid_impulse_pause",
+    "p_bounce": 0.918,
+    "expected_depth": 1.11
+  },
+  {
+    "symbol": "1000SHIBUSDT",
+    "level": 0.0048895,
+    "level_side": "support",
+    "active": false,
+    "strength": 5,
+    "type": "pump_base",
+    "p_bounce": 0.923,
+    "expected_depth": 1.02
+  }
+]
