@@ -1,0 +1,359 @@
+2026-07-19 12:25:05 | WARNING | trading.bybit_client:cancel_order:247 | bybit cancel_order unexpected response | {'symbol': 'AKEUSDT', 'order_id': 'f9155c3b-bcb7-4bca-a8a9-4f658d330a45', 'resp': {'retCode': 110001, 'retMsg': 'order not exists or too late to cancel', 'result': {}, 'retExtInfo': {}, 'time': 1784463905163}}
+2026-07-19 12:25:08 | WARNING | trading.bybit_client:cancel_order:247 | bybit cancel_order unexpected response | {'symbol': 'AKEUSDT', 'order_id': '0dcccf60-5113-4ee0-87c5-30e92462a1c0', 'resp': {'retCode': 110001, 'retMsg': 'order not exists or too late to cancel', 'result': {}, 'retExtInfo': {}, 'time': 1784463908433}}
+2026-07-19 13:03:34 | ERROR | bot.telegram:send_message:1453 | Failed to send Telegram message | {}
+Traceback (most recent call last):
+
+  File "/root/crypto_bot/main.py", line 2007, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x7f5fcae58a40>
+    │       └ <function run at 0x7f5fce75c680>
+    └ <module 'asyncio' from '/usr/lib/python3.12/asyncio/__init__.py'>
+
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x7f5fca225f80>
+           │      └ <function Runner.run at 0x7f5fcd853ce0>
+           └ <asyncio.runners.Runner object at 0x7f5fca270740>
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at /root/crypto_bot/main.py:1988> wait_for=<_GatheringFuture pending cb=[Tas...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x7f5fcd851940>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x7f5fca270740>
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 674, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7f5fcd8518a0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 641, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7f5fcd8536a0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1987, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7f5fcd99dbc0>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/usr/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "/root/crypto_bot/main.py", line 1254, in _proximity_loop
+    await send_message(
+          └ <function send_message at 0x7f5fcb21ae80>
+
+> File "/root/crypto_bot/bot/telegram.py", line 1451, in send_message
+    await bot.send_message(TELEGRAM_CHAT_ID, text, reply_markup=get_main_keyboard())
+          │   │            │                 │                  └ <function get_main_keyboard at 0x7f5fcb2a0860>
+          │   │            │                 └ '🎯 BUSDT цена в 1.46% от уровня 0.21305 — готовь ордер'
+          │   │            └ 1093360044
+          │   └ <function Bot.send_message at 0x7f5fcb0cf9c0>
+          └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 2928, in send_message
+    return await self(call, request_timeout=request_timeout)
+                 │    │                     └ None
+                 │    └ SendMessage(chat_id=1093360044, text='🎯 BUSDT цена в 1.46% от уровня 0.21305 — готовь ордер', business_connection_id=None, me...
+                 └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 493, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+                 │    │       │     │               └ None
+                 │    │       │     └ SendMessage(chat_id=1093360044, text='🎯 BUSDT цена в 1.46% от уровня 0.21305 — готовь ордер', business_connection_id=None, me...
+                 │    │       └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+                 │    └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x7f5fc986d700>
+                 └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+           │    │                   │          │    └ SendMessage(chat_id=1093360044, text='🎯 BUSDT цена в 1.46% от уровня 0.21305 — готовь ордер', business_connection_id=None, me...
+           │    │                   │          └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+           │    │                   └ functools.partial(<bound method AiohttpSession.make_request of <aiogram.client.session.aiohttp.AiohttpSession object at 0x7f5...
+           │    └ ~TelegramType
+           └ <function cast at 0x7f5fcd82b380>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               │    └ <function BaseSession.check_response at 0x7f5fcaf3fce0>
+               └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x7f5fc986d700>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 135, in check_response
+    raise TelegramServerError(method=method, message=description)
+          │                          │               └ 'Bad Gateway'
+          │                          └ SendMessage(chat_id=1093360044, text='🎯 BUSDT цена в 1.46% от уровня 0.21305 — готовь ордер', business_connection_id=None, me...
+          └ <class 'aiogram.exceptions.TelegramServerError'>
+
+aiogram.exceptions.TelegramServerError: Telegram server says - Bad Gateway
+2026-07-19 13:03:34 | ERROR | bot.telegram:send_photo_with_caption:1464 | Failed to send Telegram photo | {}
+Traceback (most recent call last):
+
+  File "/root/crypto_bot/main.py", line 2007, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x7f5fcae58a40>
+    │       └ <function run at 0x7f5fce75c680>
+    └ <module 'asyncio' from '/usr/lib/python3.12/asyncio/__init__.py'>
+
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x7f5fca225f80>
+           │      └ <function Runner.run at 0x7f5fcd853ce0>
+           └ <asyncio.runners.Runner object at 0x7f5fca270740>
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at /root/crypto_bot/main.py:1988> wait_for=<_GatheringFuture pending cb=[Tas...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x7f5fcd851940>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x7f5fca270740>
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 674, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7f5fcd8518a0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 641, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7f5fcd8536a0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1987, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7f5fcd99dbc0>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/usr/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "/root/crypto_bot/trading/strategy_runner.py", line 80, in run_strategies
+    await s2_live.on_event(event)
+          │       │        └ {'event_type': 'proximity', 'symbol': 'BUSDT', 'level': 0.21305, 'level_side': 'support', 'level_type': 'body_level', 'streng...
+          │       └ <function Strategy2Live.on_event at 0x7f5fca1872e0>
+          └ <trading.strategy2_live.Strategy2Live object at 0x7f5fc986fce0>
+
+  File "/root/crypto_bot/trading/strategy2_live.py", line 497, in on_event
+    await self._try_open(event)
+          │    │         └ {'event_type': 'proximity', 'symbol': 'BUSDT', 'level': 0.21305, 'level_side': 'support', 'level_type': 'body_level', 'streng...
+          │    └ <function Strategy2Live._try_open at 0x7f5fca187380>
+          └ <trading.strategy2_live.Strategy2Live object at 0x7f5fc986fce0>
+
+  File "/root/crypto_bot/trading/strategy2_live.py", line 539, in _try_open
+    await self._open_grid(params)
+          │    │          └ GridParams(symbol='BUSDT', level=0.21305, level_type='body_level', level_side='support', grid_prices=[0.2139022, 0.21070645],...
+          │    └ <function Strategy2Live._open_grid at 0x7f5fca1874c0>
+          └ <trading.strategy2_live.Strategy2Live object at 0x7f5fc986fce0>
+
+  File "/root/crypto_bot/trading/strategy2_live.py", line 810, in _open_grid
+    await send_close_with_chart(
+          └ <function send_close_with_chart at 0x7f5fcb21ade0>
+
+  File "/root/crypto_bot/bot/telegram.py", line 1504, in send_close_with_chart
+    await send_photo_with_caption(img, caption=text)
+          │                       │            └ '🟢 [S2 Live] BUSDT — сетка на Bybit Demo\n   Уровень: 0.21305 (body_level, strength=3) | p_bounce=0.92\n   Ордера (2/2):\n   ...
+          │                       └ b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x06\x9a\x00\x00\x03\x8e\x08\x06\x00\x00\x00\x10\xe5\xc1D\x00\x00\x00:tEXtSoftwa...
+          └ <function send_photo_with_caption at 0x7f5fcb21a840>
+
+> File "/root/crypto_bot/bot/telegram.py", line 1462, in send_photo_with_caption
+    await bot.send_photo(TELEGRAM_CHAT_ID, photo, caption=caption)
+          │   │          │                 │              └ '🟢 [S2 Live] BUSDT — сетка на Bybit Demo\n   Уровень: 0.21305 (body_level, strength=3) | p_bounce=0.92\n   Ордера (2/2):\n   ...
+          │   │          │                 └ <aiogram.types.input_file.BufferedInputFile object at 0x7f5fb9b73530>
+          │   │          └ 1093360044
+          │   └ <function Bot.send_photo at 0x7f5fcb0cf920>
+          └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 3002, in send_photo
+    return await self(call, request_timeout=request_timeout)
+                 │    │                     └ None
+                 │    └ SendPhoto(chat_id=1093360044, photo=<aiogram.types.input_file.BufferedInputFile object at 0x7f5fb9b73530>, business_connectio...
+                 └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 493, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+                 │    │       │     │               └ None
+                 │    │       │     └ SendPhoto(chat_id=1093360044, photo=<aiogram.types.input_file.BufferedInputFile object at 0x7f5fb9b73530>, business_connectio...
+                 │    │       └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+                 │    └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x7f5fc986d700>
+                 └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+           │    │                   │          │    └ SendPhoto(chat_id=1093360044, photo=<aiogram.types.input_file.BufferedInputFile object at 0x7f5fb9b73530>, business_connectio...
+           │    │                   │          └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+           │    │                   └ functools.partial(<bound method AiohttpSession.make_request of <aiogram.client.session.aiohttp.AiohttpSession object at 0x7f5...
+           │    └ ~TelegramType
+           └ <function cast at 0x7f5fcd82b380>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               │    └ <function BaseSession.check_response at 0x7f5fcaf3fce0>
+               └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x7f5fc986d700>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 135, in check_response
+    raise TelegramServerError(method=method, message=description)
+          │                          │               └ 'Bad Gateway'
+          │                          └ SendPhoto(chat_id=1093360044, photo=<aiogram.types.input_file.BufferedInputFile object at 0x7f5fb9b73530>, business_connectio...
+          └ <class 'aiogram.exceptions.TelegramServerError'>
+
+aiogram.exceptions.TelegramServerError: Telegram server says - Bad Gateway
+2026-07-19 13:03:34 | ERROR | bot.telegram:send_message:1453 | Failed to send Telegram message | {}
+Traceback (most recent call last):
+
+  File "/root/crypto_bot/bot/telegram.py", line 1462, in send_photo_with_caption
+    await bot.send_photo(TELEGRAM_CHAT_ID, photo, caption=caption)
+          │   │          │                 │              └ '🟢 [S2 Live] BUSDT — сетка на Bybit Demo\n   Уровень: 0.21305 (body_level, strength=3) | p_bounce=0.92\n   Ордера (2/2):\n   ...
+          │   │          │                 └ <aiogram.types.input_file.BufferedInputFile object at 0x7f5fb9b73530>
+          │   │          └ 1093360044
+          │   └ <function Bot.send_photo at 0x7f5fcb0cf920>
+          └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 3002, in send_photo
+    return await self(call, request_timeout=request_timeout)
+                 │    │                     └ None
+                 │    └ SendPhoto(chat_id=1093360044, photo=<aiogram.types.input_file.BufferedInputFile object at 0x7f5fb9b73530>, business_connectio...
+                 └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 493, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+                 │    │       │     │               └ None
+                 │    │       │     └ SendPhoto(chat_id=1093360044, photo=<aiogram.types.input_file.BufferedInputFile object at 0x7f5fb9b73530>, business_connectio...
+                 │    │       └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+                 │    └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x7f5fc986d700>
+                 └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+           │    │                   │          │    └ SendPhoto(chat_id=1093360044, photo=<aiogram.types.input_file.BufferedInputFile object at 0x7f5fb9b73530>, business_connectio...
+           │    │                   │          └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+           │    │                   └ functools.partial(<bound method AiohttpSession.make_request of <aiogram.client.session.aiohttp.AiohttpSession object at 0x7f5...
+           │    └ ~TelegramType
+           └ <function cast at 0x7f5fcd82b380>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               │    └ <function BaseSession.check_response at 0x7f5fcaf3fce0>
+               └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x7f5fc986d700>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 135, in check_response
+    raise TelegramServerError(method=method, message=description)
+          │                          │               └ 'Bad Gateway'
+          │                          └ SendPhoto(chat_id=1093360044, photo=<aiogram.types.input_file.BufferedInputFile object at 0x7f5fb9b73530>, business_connectio...
+          └ <class 'aiogram.exceptions.TelegramServerError'>
+
+aiogram.exceptions.TelegramServerError: Telegram server says - Bad Gateway
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+  File "/root/crypto_bot/main.py", line 2007, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x7f5fcae58a40>
+    │       └ <function run at 0x7f5fce75c680>
+    └ <module 'asyncio' from '/usr/lib/python3.12/asyncio/__init__.py'>
+
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x7f5fca225f80>
+           │      └ <function Runner.run at 0x7f5fcd853ce0>
+           └ <asyncio.runners.Runner object at 0x7f5fca270740>
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at /root/crypto_bot/main.py:1988> wait_for=<_GatheringFuture pending cb=[Tas...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x7f5fcd851940>
+           │    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x7f5fca270740>
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 674, in run_until_complete
+    self.run_forever()
+    │    └ <function BaseEventLoop.run_forever at 0x7f5fcd8518a0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 641, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x7f5fcd8536a0>
+    └ <_UnixSelectorEventLoop running=True closed=False debug=False>
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 1987, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x7f5fcd99dbc0>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+  File "/usr/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle Task.task_wakeup(<Future finished result=None>)>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle Task.task_wakeup(<Future finished result=None>)>
+
+  File "/root/crypto_bot/trading/strategy_runner.py", line 80, in run_strategies
+    await s2_live.on_event(event)
+          │       │        └ {'event_type': 'proximity', 'symbol': 'BUSDT', 'level': 0.21305, 'level_side': 'support', 'level_type': 'body_level', 'streng...
+          │       └ <function Strategy2Live.on_event at 0x7f5fca1872e0>
+          └ <trading.strategy2_live.Strategy2Live object at 0x7f5fc986fce0>
+
+  File "/root/crypto_bot/trading/strategy2_live.py", line 497, in on_event
+    await self._try_open(event)
+          │    │         └ {'event_type': 'proximity', 'symbol': 'BUSDT', 'level': 0.21305, 'level_side': 'support', 'level_type': 'body_level', 'streng...
+          │    └ <function Strategy2Live._try_open at 0x7f5fca187380>
+          └ <trading.strategy2_live.Strategy2Live object at 0x7f5fc986fce0>
+
+  File "/root/crypto_bot/trading/strategy2_live.py", line 539, in _try_open
+    await self._open_grid(params)
+          │    │          └ GridParams(symbol='BUSDT', level=0.21305, level_type='body_level', level_side='support', grid_prices=[0.2139022, 0.21070645],...
+          │    └ <function Strategy2Live._open_grid at 0x7f5fca1874c0>
+          └ <trading.strategy2_live.Strategy2Live object at 0x7f5fc986fce0>
+
+  File "/root/crypto_bot/trading/strategy2_live.py", line 810, in _open_grid
+    await send_close_with_chart(
+          └ <function send_close_with_chart at 0x7f5fcb21ade0>
+
+  File "/root/crypto_bot/bot/telegram.py", line 1504, in send_close_with_chart
+    await send_photo_with_caption(img, caption=text)
+          │                       │            └ '🟢 [S2 Live] BUSDT — сетка на Bybit Demo\n   Уровень: 0.21305 (body_level, strength=3) | p_bounce=0.92\n   Ордера (2/2):\n   ...
+          │                       └ b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR\x00\x00\x06\x9a\x00\x00\x03\x8e\x08\x06\x00\x00\x00\x10\xe5\xc1D\x00\x00\x00:tEXtSoftwa...
+          └ <function send_photo_with_caption at 0x7f5fcb21a840>
+
+  File "/root/crypto_bot/bot/telegram.py", line 1465, in send_photo_with_caption
+    await send_message(caption)
+          │            └ '🟢 [S2 Live] BUSDT — сетка на Bybit Demo\n   Уровень: 0.21305 (body_level, strength=3) | p_bounce=0.92\n   Ордера (2/2):\n   ...
+          └ <function send_message at 0x7f5fcb21ae80>
+
+> File "/root/crypto_bot/bot/telegram.py", line 1451, in send_message
+    await bot.send_message(TELEGRAM_CHAT_ID, text, reply_markup=get_main_keyboard())
+          │   │            │                 │                  └ <function get_main_keyboard at 0x7f5fcb2a0860>
+          │   │            │                 └ '🟢 [S2 Live] BUSDT — сетка на Bybit Demo\n   Уровень: 0.21305 (body_level, strength=3) | p_bounce=0.92\n   Ордера (2/2):\n   ...
+          │   │            └ 1093360044
+          │   └ <function Bot.send_message at 0x7f5fcb0cf9c0>
+          └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 2928, in send_message
+    return await self(call, request_timeout=request_timeout)
+                 │    │                     └ None
+                 │    └ SendMessage(chat_id=1093360044, text='🟢 [S2 Live] BUSDT — сетка на Bybit Demo\n   Уровень: 0.21305 (body_level, strength=3) |...
+                 └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/bot.py", line 493, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+                 │    │       │     │               └ None
+                 │    │       │     └ SendMessage(chat_id=1093360044, text='🟢 [S2 Live] BUSDT — сетка на Bybit Demo\n   Уровень: 0.21305 (body_level, strength=3) |...
+                 │    │       └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+                 │    └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x7f5fc986d700>
+                 └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+           │    │                   │          │    └ SendMessage(chat_id=1093360044, text='🟢 [S2 Live] BUSDT — сетка на Bybit Demo\n   Уровень: 0.21305 (body_level, strength=3) |...
+           │    │                   │          └ <aiogram.client.bot.Bot object at 0x7f5fc986c740>
+           │    │                   └ functools.partial(<bound method AiohttpSession.make_request of <aiogram.client.session.aiohttp.AiohttpSession object at 0x7f5...
+           │    └ ~TelegramType
+           └ <function cast at 0x7f5fcd82b380>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/session/aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               │    └ <function BaseSession.check_response at 0x7f5fcaf3fce0>
+               └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x7f5fc986d700>
+  File "/root/crypto_bot/venv/lib/python3.12/site-packages/aiogram/client/session/base.py", line 135, in check_response
+    raise TelegramServerError(method=method, message=description)
+          │                          │               └ 'Bad Gateway'
+          │                          └ SendMessage(chat_id=1093360044, text='🟢 [S2 Live] BUSDT — сетка на Bybit Demo\n   Уровень: 0.21305 (body_level, strength=3) |...
+          └ <class 'aiogram.exceptions.TelegramServerError'>
+
+aiogram.exceptions.TelegramServerError: Telegram server says - Bad Gateway
+2026-07-19 13:19:06 | WARNING | trading.strategy5_live:_finalize_closed:330 | S5Live: no executions, PnL estimated | {'trade_id': 'cc8f9b9b-0a65-41a0-b05a-460ace17d2a3', 'exec_count': 1, 'exec_err': None, 'buy_qty': 550.0, 'sell_qty': 0.0}
+2026-07-19 18:00:11 | WARNING | trading.strategy5_live:_finalize_closed:330 | S5Live: no executions, PnL estimated | {'trade_id': '64cd5070-7eac-4a32-8b54-9e9a0efdc216', 'exec_count': 1, 'exec_err': None, 'buy_qty': 480.0, 'sell_qty': 0.0}
+2026-07-19 18:01:15 | WARNING | trading.bybit_client:cancel_order:247 | bybit cancel_order unexpected response | {'symbol': 'USUSDT', 'order_id': 'c2545274-56fa-46fc-b403-e758822fc312', 'resp': {'retCode': 110001, 'retMsg': 'order not exists or too late to cancel', 'result': {}, 'retExtInfo': {}, 'time': 1784484075037}}
+2026-07-19 23:51:48 | WARNING | trading.strategy5_live:_finalize_closed:330 | S5Live: no executions, PnL estimated | {'trade_id': '6bfb81e4-47a7-43c4-a18a-466da1075d30', 'exec_count': 1, 'exec_err': None, 'buy_qty': 9689.0, 'sell_qty': 0.0}
+2026-07-20 01:39:26 | WARNING | trading.strategy5_live:_finalize_closed:330 | S5Live: no executions, PnL estimated | {'trade_id': '57cbadca-7cd3-431a-9ff9-53b4e7f6b45c', 'exec_count': 1, 'exec_err': None, 'buy_qty': 45300.0, 'sell_qty': 0.0}
+2026-07-20 02:22:41 | WARNING | trading.bybit_client:cancel_order:247 | bybit cancel_order unexpected response | {'symbol': 'USUSDT', 'order_id': '742e6fb0-8aeb-4681-96af-6372f862523b', 'resp': {'retCode': 110001, 'retMsg': 'order not exists or too late to cancel', 'result': {}, 'retExtInfo': {}, 'time': 1784514161868}}
+2026-07-20 03:20:47 | WARNING | trading.bybit_client:cancel_order:247 | bybit cancel_order unexpected response | {'symbol': 'TLMUSDT', 'order_id': '1c66865c-c5c9-4dc0-9d23-47decd14a1fd', 'resp': {'retCode': 110001, 'retMsg': 'order not exists or too late to cancel', 'result': {}, 'retExtInfo': {}, 'time': 1784517647364}}
+2026-07-20 03:20:50 | WARNING | trading.strategy2_live:_realized_pnl_from_executions:1888 | S2Live: buy/sell qty mismatch on close — PnL booked on matched qty only, remainder left for reconcile | {'trade_id': 'be8d5169-9e58-4c60-ac09-4d4ecca9a27b', 'symbol': 'TLMUSDT', 'buy_qty': 47675.0, 'sell_qty': 23837.0, 'matched_qty': 23837.0}
+2026-07-20 04:31:46 | WARNING | trading.strategy2_live:_recalculate_params:2119 | S2Live: full grid SL update skipped — price already at/below new trigger, closing market immediately | {'trade_id': 'edf0bb72-55a3-4214-a6fd-b77c9ca68dad', 'symbol': 'USUSDT', 'current_price': 0.043827, 'sl_trigger': 0.043939}
+2026-07-20 09:35:43 | WARNING | trading.strategy5_live:_finalize_closed:330 | S5Live: no executions, PnL estimated | {'trade_id': 'f3077fb4-4e56-47da-b750-3e70d5f53fa0', 'exec_count': 1, 'exec_err': None, 'buy_qty': 702.0, 'sell_qty': 0.0}
